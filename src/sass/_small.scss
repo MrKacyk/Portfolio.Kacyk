@@ -47,8 +47,38 @@
         }
     }
     .skills-img {
+        display: flex;
+	    justify-content: center;
+        .box {
+            flex-direction: column;
+        }
         &__firstBox {
-            float: none;
+            margin-bottom: 1em;
+            &-one {
+                display: flex;
+			    justify-content: center;
+			    align-items: center;
+            }
+        }
+        &__secondBox {
+            display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    flex-direction: column;
+            &-one {
+                display: flex;
+			    justify-content: center;
+			    align-items: stretch;
+                &-div {
+                    display: flex;
+				    align-items: flex-end;
+				    flex-direction: column;
+                    .conteiners {
+                        display: flex;
+					    align-items:baseline;
+                    }
+                }
+            }
         }
     }
 
