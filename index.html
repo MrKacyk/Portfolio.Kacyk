@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Patryk Kacperek</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./dist/css/style.mix.css">
+    <script src="https://kit.fontawesome.com/37e8b7ca54.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header id="header" class="header">
+
+        <button class="burger-btn">
+            <div class="burger-btn__box">
+                <div class="burger-btn__bars"></div>
+            </div>
+        </button>
+
+        <nav class="nav">
+
+            <div class="nav__text">
+                <h1>Portfolio</h1>
+                <h3>
+                    < Patryk <span class="title">Kacperek</span> />
+                </h3>
+            </div>
+
+            <div class="nav-mobile">
+                <a href="#meetMe" class="nav__item nav__one">Poznaj Mnie</a>
+                <a href="#portfolio" class="nav__item nav__one">Zobacz Moje Portfolio</a>
+                <a href="#contact" class="nav__item nav__one">Kontakt Ze mną </a>
+            </div>
+            <div class="nav-desktop">
+                <a href="#meetMe" class="nav__item nav__one">Poznaj Mnie</a>
+                <a href="#portfolio" class="nav__item nav__one">Zobacz Moje Portfolio</a>
+                <a href="#contact" class="nav__item nav__one">Kontakt Ze mną </a>
+            </div>
+
+        </nav>
+        <button class="scroll-to-top"><img src="./src/img/icons/arrow-up-circle.svg" alt=""></button>
+
+        <section id="meetMe" class="hero-img">
+            <div class="wrapper">
+                <div class="hero-img__conteiner">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0d6f12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <path d="M16 11h6m-3 -3v6" />
+                      </svg>
+                    <h2 class="hero-img__h2">narodziny</h2>
+                    <p class="hero-img__text">Pewnego dnia to było jakoś 27 stycznia 1994 r gdy internet powstawał ,
+                        przyszedł na świat patryczek :D</p>
+                </div>
+
+                <div class="hero-img__lokal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0d6f12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="11" r="3" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                      </svg>
+                    <h2 class="hero-img__h2">Tutaj Się Urodziłem</h2>
+                    <p class="hero-img__text">Dorastałem na południu Polski w mieście Zabrze woj.śląskie o tuu zresztą
+                        dalej tam mieszkam i pracuje.</p>
+                </div>
+
+                <div id="map"></div>
+
+
+            </div>
+        </section>
+
+        <section class="working-img">
+            <div class="wrapper">
+                <div class="working-img__conteiner">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="84"
+                        height="84" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4E9F3D" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+                        <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+                    </svg>
+                    <h2 class="working-img__h2">początki edukacji</h2>
+                    <p class="working-img__text">Od samego początku, jeżeli chodzi o naukę jakoś za mną nie przemawiała
+                        bardziej wolałem naukę w pracy, ale oczywiście trzeba było jakoś pozdawać szkoły od podstawówki
+                        do zawodu jako górnik eksploatacji podziemnej, lecz, nawet gdy zrobiłem tą szkołe nie poszedłem
+                        w tym kierunku pracy.</p>
+                </div>
+                <div class="working-img__conteiner">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-factory"
+                        width="84" height="84" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 21c1.147 -4.02 1.983 -8.027 2 -12h6c.017 3.973 .853 7.98 2 12" />
+                        <path d="M12.5 13h4.5c.025 2.612 .894 5.296 2 8" />
+                        <path
+                            d="M9 5a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1" />
+                        <line x1="3" y1="21" x2="22" y2="21" />
+                    </svg>
+                    <h2 class="working-img__h2">praca w firmach</h2>
+                    <p class="working-img__text">Pierwsza firma, w której zacząłem prace nazywała się <span
+                            class="working-img__span">( Plas. co. tech Poland Sp. z o.o. )</span> - Pracowałem tam jako
+                        kontroler Jakości, praca taka bardziej na akord, niż kontrola jakości przerobiłem tam jakoś pół
+                        roku i podziękowałem. </p>
+                    <p class="working-img__text">Następna firma była już produkcyjna typowo, a nazywała się <span
+                            class="working-img__span">( Adler Pelzer Group HP Polska Sp. z o o )</span> - Praca
+                        produkcji wytwarzanie wnętrza części do samochodów tutaj jakoś przerobiłem 2 lata, ale zarobkowo
+                        dalej nie było to za dużo.</p>
+                    <p class="working-img__text">Następnym krokiem jako praca była firma <span
+                            class="working-img__span">( SEST Luve Polska )</span> - Kolejna produkcja tym razem
+                        wymieniki powietrza, czyli klimatyzacja, nauczyłem się tam zaawansowanego rysunku technicznego
+                        popracowałem 2 lata, na dłuższą metę ta praca nie była dla mnie.</p>
+                    <p class="working-img__text">Aktualnie pracuje w firmie <span class="working-img__span">( Amazon
+                            Fulfillment KTW3 )</span> - Tutaj już jako pracownik magazynowy dokładnie na funkcji Amnesty
+                        Responder, poznanie całego procesu, jak to tu jest, zarobiki przyzwoite, lecz praca po 10h z
+                        dojazdami jakoś 12h wiec nie za bardzo jest to dobre , obecnie tutaj robie .</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="skills-img">
+            <div class="wrapper">
+                <div class="skills-img__firstBox">
+                    <h2 class="skills-img__h2">zainteresowania</h2>
+                    <div class="skills-img__firstBox-one">
+                        <div class="skills-img__iconsIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="iconsU icon icon-tabler icon-tabler-disc" width="68"
+                                height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#23d2d8e5" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="12" r="9" />
+                                <circle cx="12" cy="12" r="1" />
+                                <path d="M7 12a5 5 0 0 1 5 -5" />
+                                <path d="M12 17a5 5 0 0 0 5 -5" />
+                            </svg>
+                            <p class="skills-img__text par">Muzyka</p>
+                        </div>
+                        <div class="skills-img__iconsIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="iconsU icon icon-tabler icon-tabler-olympics"
+                                width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#23d2d8e5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="6" cy="9" r="3" />
+                                <circle cx="18" cy="9" r="3" />
+                                <circle cx="12" cy="9" r="3" />
+                                <circle cx="9" cy="15" r="3" />
+                                <circle cx="15" cy="15" r="3" />
+                            </svg>
+                            <p class="skills-img__text par">Sport</p>
+                        </div>
+                        <div class="skills-img__iconsIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="iconsU icon icon-tabler icon-tabler-devices-pc"
+                                width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#23d2d8e5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 5h6v14h-6z" />
+                                <path d="M12 9h10v7h-10z" />
+                                <path d="M14 19h6" />
+                                <path d="M17 16v3" />
+                                <path d="M6 13v.01" />
+                                <path d="M6 16v.01" />
+                            </svg>
+                            <p class="skills-img__text par">Elektronika</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-img__secondBox">
+                    <h2 class="skills-img__h2">umiejetnosci</h2>
+                    <div class="skills-img__secondBox-one">
+                        <div class="skills-img__secondBox-one-div">
+                            <div class="conteiners">
+                                <p class="textPar">HTML/CSS</p>
+                                <div class="icons">
+                                    <i class="fas fa-solid fa-star"></i><i class="fas fa-solid fa-star"></i><i
+                                        class="fas fa-solid fa-star"></i><i class="far fa-regular fa-star"></i><i
+                                        class="far fa-regular fa-star"></i><i class="far fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="conteiners">
+                                <p class="textPar">JS/JQUERY</p>
+                                <div class="icons">
+                                    <i class="fas fa-solid fa-star"></i><i class="fas fa-solid fa-star"></i> <i
+                                        class="fas fa-solid fa-star-half-stroke"></i><i
+                                        class="far fa-regular fa-star"></i><i class="far fa-regular fa-star"></i><i
+                                        class="far fa-regular fa-star"></i>
+                                </div>
+
+                            </div>
+                            <div class="conteiners">
+                                <p class="textPar">SASS/SCSS</p>
+                                <div class="icons">
+                                    <i class="fas fa-solid fa-star"></i><i class="fas fa-solid fa-star"></i> <i
+                                        class="fas fa-solid fa-star"></i><i class="far fa-regular fa-star"></i><i
+                                        class="far fa-regular fa-star"></i><i class="far fa-regular fa-star"></i>
+                                </div>
+
+                            </div>
+                            <div class="conteiners">
+                                <p class="textPar">GIT</p>
+                                <div class="icons">
+                                    <i class="fas fa-solid fa-star"></i><i class="fas fa-solid fa-star"></i> <i
+                                        class="fas fa-solid fa-star"></i><i class="far fa-regular fa-star"></i><i
+                                        class="far fa-regular fa-star"></i><i class="far fa-regular fa-star"></i>
+                                </div>
+
+                            </div>
+                            <div class="conteiners">
+                                <p class="textPar">NODEJS</p>
+                                <div class="icons">
+                                    <i class="fas fa-solid fa-star"></i><i class="fas fa-solid fa-star"></i> <i
+                                        class="far fa-regular fa-star"></i><i class="far fa-regular fa-star"></i><i
+                                        class="far fa-regular fa-star"></i><i class="far fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="wrapper">
+
+                <div class="footer__boxes">
+                    <div class="footer__boxe">
+                        <h3 class="footer__box-title"> znajdziesz mnie na</h3>
+                        <div class="footer__box-social">
+                            <a href="#" class="footer__box-link"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#" class="footer__box-link"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="footer__box-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer__box footer__box-desktop">
+                        <h3 class="footer__box-title">na skróty</h3>
+                        <ul class="footer__box-list">
+                            <li class="footer__box-list-item"><a href="#">kontakt ze mną</a></li>
+                            <li class="footer__box-list-item"><a href="#">poznaj mnie</a></li>
+                            <li class="footer__box-list-item"><a href="#">Kariera</a></li>
+                            <li class="footer__box-list-item"><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> Wszystkie prawa zastrzeżone -
+                Portfolio/Patryk Kacperk - Początkujący programista - Enfold Theme by Kriesi </p>
+            </div>
+
+        </footer>
+
+    </header>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIQ8VBDm35o-p6FQHCIwMEMbMmDQIab8s&callback=initMap&libraries=&v=weekly"
+        async></script>
+    <script src="./dist/js/main.mix.js"></script>
+</body>
+
+</html>

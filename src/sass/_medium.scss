@@ -1,0 +1,22 @@
+@media(max-width: 768px) {
+    .nav {
+        padding-left: 3em;
+        justify-content: flex-start;
+        height: 9vh;
+    }
+    .shrink {
+        padding-left: 3em;
+        justify-content: flex-start;
+        height: 6vh;
+    }
+
+    // BTN
+    .burger-btn {
+        top: 1.2vh;
+        right: 1.7vh;
+        &__box {
+            width: 4vh;
+            height: 3vh;
+        }
+    }
+}

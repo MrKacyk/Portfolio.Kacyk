@@ -1,0 +1,28 @@
+@mixin burgerBtn {
+	position: absolute;
+	right: 0;
+	height: 3px;
+	content: '';
+	background-color: $pure-white;
+	transition: width 0.3s;
+}
+
+@mixin heroImges($bgImg) {
+	background-image: $shadow-img, url($bgImg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+@mixin heroImges2($bgImg) {
+	background-image: $shadow-img2, url($bgImg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+@mixin colorH2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	font-size: 2.8rem;
+	padding: 0.9em;
+}
