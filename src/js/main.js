@@ -1,12 +1,18 @@
 const nav = document.querySelector('.nav')
+const allNavItems = document.querySelectorAll('.nav__item')
 const btn = document.querySelector('.scroll-to-top')
 const navMobile = document.querySelector('.nav-mobile')
 const navBtn = document.querySelector('.burger-btn')
 const footerYear = document.querySelector('.footer__year')
 
 const handleNavifin = () => {
-	if (navMobile.classList.toggle('nav-mobile--active')) {
-	}
+	navMobile.classList.toggle('nav-mobile--active')
+
+	allNavItems.forEach(item => {
+		item.addEventListener('click', () => {
+			navMobile.classList.remove('nav-mobile--active')
+		})
+	})
 }
 
 const handleScrollBar = () => {

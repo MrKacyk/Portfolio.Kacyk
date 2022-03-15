@@ -1,7 +1,6 @@
 {
   "name": "strona",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +27,14 @@
     "gulp-kit": "^0.3.0",
     "gulp-sourcemaps": "^3.0.0",
     "sass": "^1.49.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrKacyk/Portfolio.Kacyk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrKacyk/Portfolio.Kacyk/issues"
+  },
+  "homepage": "https://github.com/MrKacyk/Portfolio.Kacyk#readme",
+  "description": ""
 }

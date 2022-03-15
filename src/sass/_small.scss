@@ -1,3 +1,92 @@
+@media(min-width: 576px) { 
+  
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 3.5rem;
+    }
+    h3{   
+        font-size: 1.5rem;
+    }
+    // Section 1
+    .hero-img {
+        &__h2 {
+            font-size: 2.6rem;
+        }
+        &__text {
+            font-size: 1.6rem;
+        }
+    }
+    .working-img {
+        &__h2 {
+            font-size: 2.4rem;
+        }
+        &__text {
+            font-size: 1.6rem;
+            padding: 0.3em 1em;
+        }
+    }
+    // NAV
+    .nav {
+        padding-left: 1.3em;
+        justify-content: flex-start;
+        height: 9vh;
+    }
+    .shrink {
+        padding-left: 1.3em;
+        justify-content: flex-start;
+        height: 9vh;
+    }
+    // BTN
+    .burger-btn {
+        top: 1.3vh;
+        right: 1.1vh;
+        &__box {
+            width: 4vh;
+            height: 3vh;
+        }
+    }
+    .skills-img {
+        display: flex;
+	    justify-content: center;
+        .box {
+           justify-content: space-around;
+        }
+        &__firstBox {
+            margin-bottom: 1em;
+            &-one {
+                display: flex;
+			    justify-content: center;
+			    align-items: center;
+            }
+        }
+        &__secondBox {
+            display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    flex-direction: column;
+            &-one {
+                display: flex;
+			    justify-content: center;
+			    align-items: stretch;
+                &-div {
+                    display: flex;
+				    align-items: flex-end;
+				    flex-direction: column;
+                    .conteiners {
+                        display: flex;
+					    align-items:baseline;
+                    }
+                }
+            }
+        }
+    }
+
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+    }
+}
 @media(max-width: 576px) { 
   
     h1 {
@@ -87,7 +176,7 @@
         right: 20px;
     }
 }
-@media (max-width: 375px) {
+@media (min-width: 375px) {
     .burger-btn {
         top: 7px;
         right: 6px;
@@ -130,7 +219,59 @@
     }
 
     .scroll-to-top {
-        bottom: 20px;
-        right: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+@media (max-width: 375px) {
+    .burger-btn {
+        top: 7px;
+        right: 6px;
+        &__box {
+            width: 33px;
+            height: 20px;
+        }
+    }
+    .nav {
+        padding-left: 0.5em;
+        justify-content: flex-start;
+        height: 9vh;
+    }
+    .shrink {
+        padding-left: 0.5em;
+        justify-content: flex-start;
+        height: 9vh;
+    }
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 3.5rem;
+    }
+    h3{   
+        font-size: 1.5rem;
+    }
+    .working-img {
+        &__h2 {
+            font-size: 2.4rem;
+        }
+        &__text {
+            font-size: 1.6rem;
+            padding: 0.3em 1em;
+        }
+    }
+    .shrink {
+        padding-left: 0.7em;
+        justify-content: flex-start;
+        height: 10vh;
+    }
+    .skills-img {
+        &__firstBox {
+            float: none;
+        }
+    }
+
+    .scroll-to-top {
+        bottom: 10px;
+        right: 10px;
     }
 }

@@ -9,18 +9,48 @@
 		}
 	}
 }
-@media (max-width: 992px) {
+@media (min-width: 820px) {
+    // BTN
+    .burger-btn {
+        top: 0.4vh;
+        right: 1.1vh;
+        &__box {
+            width: 5vh;
+            height: 4vh;
+        }
+    }
+}
+@media (max-width: 820px) {
+
+    .nav {
+        height: 9vh;
+    }
+    .shrink {
+        height: 9vh;
+    }
+    
+}
+/* @media (min-width: 992px) {
 	.nav {
-        padding-left: 3em;
+        padding-left: 1.4em;
         justify-content: flex-start;
         height: 9vh;
     }
     .shrink {
-        padding-left: 3em;
+        padding-left: 1.4em;
         justify-content: flex-start;
-        height: 6vh;
+        height: 9vh;
     }
-}
+    
+} */
 
 @media (min-width: 1200px) {
+    .nav {
+        justify-content: space-between;
+        height: 9vh;
+    }
+    .shrink {
+        justify-content: space-between;
+        height: 7vh;
+    }
 }

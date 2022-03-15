@@ -1,4 +1,4 @@
-@media(max-width: 768px) {
+@media(min-width: 768px) {
     .nav {
         padding-left: 3em;
         justify-content: flex-start;
@@ -7,16 +7,38 @@
     .shrink {
         padding-left: 3em;
         justify-content: flex-start;
-        height: 6vh;
+        height: 9vh;
     }
 
     // BTN
     .burger-btn {
-        top: 1.2vh;
+        top: 0.4vh;
         right: 1.7vh;
         &__box {
-            width: 4vh;
-            height: 3vh;
+            width: 5vh;
+            height: 4vh;
+        }
+    }
+}
+@media(max-width: 768px) {
+    .nav {
+        padding-left: 0.5em;
+        justify-content: flex-start;
+        height: 9vh;
+    }
+    .shrink {
+        padding-left: 0.5em;
+        justify-content: flex-start;
+        height: 9vh;
+    }
+
+    // BTN
+    .burger-btn {
+        top: 0.4vh;
+        right: 1.7vh;
+        &__box {
+            width: 5vh;
+            height: 4vh;
         }
     }
 }
