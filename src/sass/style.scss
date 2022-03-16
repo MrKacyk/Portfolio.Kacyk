@@ -247,7 +247,7 @@ h3 {
 .hero-img {
 	position: relative;
 	padding: 5em 2em;
-	@include heroImges('/dist/img/programming_1920.png');
+	@include heroImges('../img/juanjo.jpg');
 	text-align: center;
 	height: 100%;
 	&__h2 {
@@ -292,9 +292,11 @@ h3 {
 //Se-Section3
 
 .skills-img {
+	position: relative;
 	display: flex;
 	padding: 5em 2em;
-	@include heroImges2('/dist/img/developer_1920.png');
+	@include heroImges2('../img/developer_1920.png');
+	/* @include heroImges2('/dist/img/developer_1920.png'); */
 	/* height: 60vh; */
 	text-align: center;
 	.box {

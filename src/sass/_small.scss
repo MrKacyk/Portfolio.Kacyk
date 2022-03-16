@@ -8,15 +8,6 @@
     h3{   
         font-size: 1.5rem;
     }
-    // Section 1
-    .hero-img {
-        &__h2 {
-            font-size: 2.6rem;
-        }
-        &__text {
-            font-size: 1.6rem;
-        }
-    }
     .working-img {
         &__h2 {
             font-size: 2.4rem;
@@ -99,8 +90,9 @@
     }
     // Section 1
     .hero-img {
+        @include heroImges('../img/juanjo-small.jpg');
         &__h2 {
-            font-size: 2.6rem;
+            font-size: 2.4rem;
         }
         &__text {
             font-size: 1.6rem;
@@ -143,8 +135,12 @@
     .skills-img {
         display: flex;
 	    justify-content: center;
+        @include heroImges2('../img/developer_640.png');
         .box {
             flex-direction: column;
+        }
+        &__h2 {
+            font-size: 2.5rem;
         }
         &__firstBox {
             margin-bottom: 1em;
@@ -173,6 +169,13 @@
                     }
                 }
             }
+        }
+    }
+
+    .footer {
+        h3 {
+            text-align: center;
+            font-size: 2.2rem;
         }
     }
 
