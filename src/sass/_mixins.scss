@@ -19,6 +19,12 @@
 	background-position: center;
 	background-attachment: fixed;
 }
+@mixin heroImgesMobile($bgImg) {
+	background-image: $shadow-imgMobile, url($bgImg);
+}
+@mixin heroImges2Mobile($bgImg) {
+	background-image: $shadow-img2Mobile, url($bgImg);
+}
 
 @mixin colorH2 {
     text-transform: uppercase;
