@@ -241,7 +241,6 @@ h3 {
 	}
 }
 
-
 // Se-Section1
 
 .hero-img {
@@ -254,12 +253,51 @@ h3 {
 		@include colorH2;
 		padding: 1em;
 	}
+	&__h2o {
+		position: relative;
+		@include colorH2;
+		padding: 1em;
+		&::before {
+			position: absolute;
+			content: '';
+			width: 5%;
+			left: 48%;
+			bottom: 15%;
+			border-bottom: 1px solid $text2Color;
+		}
+	}
 	&__text {
 		font-size: 2rem;
 		color: $pure-white;
 	}
 	&__lokal {
 		margin-top: 2em;
+	}
+	&__lokar {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		margin-top: 3em;
+		.texts {
+			text-align: start;
+			margin-bottom: 1em;
+		}
+		.imgPhoto {
+			margin-top: 2em;
+			border-radius: 50%;
+			border: 2px solid $pure-white;
+			width: 30vh;
+			height: 30vh;
+		}
+		.links {
+			cursor: pointer;
+			color: $lineBorderColor;
+			text-decoration: none;
+			transition: color .5s;
+		}
+		.links:hover {
+			color: $text2Color;
+		}
 	}
 }
 
@@ -347,7 +385,7 @@ h3 {
 				flex-direction: column;
 				.conteiners {
 					display: flex;
-					align-items:baseline;
+					align-items: baseline;
 					padding: 0 0 0.5em 0.5em;
 					i {
 						font-size: 1.7rem;
@@ -357,9 +395,9 @@ h3 {
 						padding: 0.3em;
 						margin-left: 1em;
 						color: #e4ad56;
-					}					
+					}
 				}
-			
+
 				.textPar {
 					color: #27c5cae5;
 					font-weight: bold;
