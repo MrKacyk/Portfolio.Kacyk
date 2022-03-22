@@ -64,6 +64,7 @@
 	}
 	// Section 1
 	.hero-img {
+		padding: 1em 0;
 		@include heroImgesMobile('../img/juanjo-small.jpg');
 		&__h2 {
 			font-size: 2.4rem;
@@ -80,9 +81,8 @@
 		&__lokar {
 			flex-direction: column;
             align-items: center;
-			margin-top: 2em;
 			.imgPhoto {
-                margin-top: 3em;
+                margin-top: 2em;
 			}
 		}
 	}
