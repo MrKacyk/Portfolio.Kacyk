@@ -260,8 +260,8 @@ h3 {
 		&::before {
 			position: absolute;
 			content: '';
-			width: 5%;
-			left: 48%;
+			width: 6%;
+			left: 47%;
 			bottom: 15%;
 			border-bottom: 1px solid $text2Color;
 		}
@@ -284,6 +284,7 @@ h3 {
 		}
 		.imgPhoto {
 			margin-top: 2em;
+			margin-left: 1em;
 			border-radius: 50%;
 			border: 2px solid $pure-white;
 			width: 30vh;
