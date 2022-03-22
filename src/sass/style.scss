@@ -276,7 +276,7 @@ h3 {
 	&__lokar {
 		display: flex;
 		flex-direction: row;
-		align-items: flex-start;
+		align-items: center;
 		margin-top: 3em;
 		.texts {
 			text-align: start;
@@ -287,8 +287,8 @@ h3 {
 			margin-left: 1em;
 			border-radius: 50%;
 			border: 2px solid $pure-white;
-			width: 30vh;
-			height: 30vh;
+			width: 35vh;
+			height: 35vh;
 		}
 		.links {
 			cursor: pointer;
