@@ -492,7 +492,6 @@ h3 {
 }
 
 .scroll-to-top {
-	display: none;
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
@@ -500,9 +499,11 @@ h3 {
 	border-radius: 15px;
 	background: rgba(255, 255, 255, 0);
 	border: none;
+	transition: opacity 1s, visible 1s;
 	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
 	z-index: 1000;
-
 	&::before {
 		position: absolute;
 		top: 0;
@@ -521,8 +522,10 @@ h3 {
 		background-color: rgba(0, 0, 0, 0);
 	}
 }
+
 .active {
-	display: block;
+	opacity: 1;
+	visibility: visible;
 }
 
 @import './small';
