@@ -109,6 +109,21 @@
 		&__item {
 			padding: 1.4em 1.3em;
 			font-size: 2.4rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 3px;
+                height: 100%;
+                transform: scaleY(0);
+                transition: transform 0.3s;
+                background-color: $lineBorderColor;
+            }
+            &:hover::before {
+                transform: scaleY(1);
+            }
 		}
 	}
 	.shrink {

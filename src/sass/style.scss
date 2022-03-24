@@ -146,9 +146,9 @@ h3 {
 		align-items: center;
 		flex-direction: column;
 		background-color: $navColor;
-		transform: translateX(-102%);
-		transition: transform 0.3s;
-		z-index: 10;
+		transform: translateX(-100%);
+		transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+		z-index: 100;
 		&--active {
 			transform: translateX(0);
 		}
@@ -163,7 +163,7 @@ h3 {
 		padding: 0.6em 1.6em;
 		font-size: 1.8rem;
 		text-decoration: none;
-		text-align: center;
+		text-align: center;	
 	}
 	&__item,
 	&__item::after,
@@ -188,6 +188,10 @@ h3 {
 	&__one:hover::after {
 		width: 45%;
 	}
+}
+
+.nav-items-animation {
+	animation: navItemsAnimation 1s both;
 }
 
 .title {
@@ -287,14 +291,14 @@ h3 {
 			margin-left: 1em;
 			border-radius: 50%;
 			border: 2px solid $pure-white;
-			width: 35vh;
-			height: 35vh;
+			width: 33vh;
+			height: 33vh;
 		}
 		.links {
 			cursor: pointer;
 			color: $lineBorderColor;
 			text-decoration: none;
-			transition: color .5s;
+			transition: color 0.5s;
 		}
 		.links:hover {
 			color: $text2Color;
