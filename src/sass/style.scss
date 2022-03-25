@@ -163,7 +163,7 @@ h3 {
 		padding: 0.6em 1.6em;
 		font-size: 1.8rem;
 		text-decoration: none;
-		text-align: center;	
+		text-align: center;
 	}
 	&__item,
 	&__item::after,
@@ -261,6 +261,7 @@ h3 {
 		position: relative;
 		@include colorH2;
 		padding: 1em;
+		margin-bottom: 0.5em;
 		&::before {
 			position: absolute;
 			content: '';
@@ -530,6 +531,62 @@ h3 {
 .active {
 	opacity: 1;
 	visibility: visible;
+}
+
+///////////// CONTACT
+
+.contact {
+	&__text {
+		position: relative;
+		text-align: center;
+		font-size: 3rem;
+		padding: 2em 1em 1em 1em;
+		&::before {
+			position: absolute;
+			content: '';
+			width: 6%;
+			left: 47%;
+			bottom: 15%;
+			border-bottom: 1px solid $text2Color;
+		}
+	}
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 3em 1em;
+		.labelDiv {
+			min-height: 3.2rem;
+			padding: 1rem;
+			display: flex;
+			font-size: 1.6rem;
+			flex-direction: row;
+			align-items: center;
+			position: relative;
+			line-height: 1.3;
+		}
+		&-first {
+			display: flex;
+			flex-direction: column;
+			input {
+				width: 40vh;
+				height: 6vh;
+				border-radius: 10px;
+				@include labelArea;
+			}
+		}
+		&-second {
+			display: flex;
+			justify-content: flex-end;
+			textarea {
+				overflow: auto;
+				vertical-align: top;
+				border-radius: 6px;
+				width: 70vh;
+				@include labelArea;
+			}
+		}
+	}
 }
 
 @import './small';

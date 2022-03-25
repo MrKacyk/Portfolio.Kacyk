@@ -27,8 +27,21 @@
 }
 
 @mixin colorH2 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 	font-size: 2.8rem;
 	padding: 0.9em;
+}
+
+@mixin labelArea {
+	margin-top: 1rem;
+	border: 0;
+	padding: 1em;
+	display: block;
+	outline: none;
+	color: inherit;
+	font-size: inherit;
+	flex: 1 1 auto;
+	resize: none;
+	line-height: 1.3;
 }
