@@ -186,7 +186,7 @@ h3 {
 	}
 	&__one:hover::before,
 	&__one:hover::after {
-		width: 45%;
+		width: 35%;
 	}
 }
 
@@ -504,7 +504,7 @@ h3 {
 	border-radius: 15px;
 	background: rgba(255, 255, 255, 0);
 	border: none;
-	transition: opacity 1s, visible 1s;
+	transition: all .5s, opacity .5s, visible .5s;
 	cursor: pointer;
 	opacity: 0;
 	visibility: hidden;
@@ -518,15 +518,19 @@ h3 {
 		height: 100%;
 		border: 1px solid #d3eca7;
 		border-radius: 50% 50%;
-		animation: pulse 3s infinite;
+		animation: pulse 3s infinite;		
 	}
-
+	&:hover {
+		transform: scale(0.9);
+	}
+	
 	img {
 		width: 7vh;
 		height: 9vh;
 		background-color: rgba(0, 0, 0, 0);
 	}
 }
+
 
 .active {
 	opacity: 1;
@@ -604,7 +608,6 @@ h3 {
 				text-transform: uppercase;
 				cursor: pointer;
 				overflow: hidden;
-				
 			}
 			button::before,
 			button::after {
