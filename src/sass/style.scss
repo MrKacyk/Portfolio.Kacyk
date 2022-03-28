@@ -504,7 +504,7 @@ h3 {
 	border-radius: 15px;
 	background: rgba(255, 255, 255, 0);
 	border: none;
-	transition: all .5s, opacity .5s, visible .5s;
+	transition: all 0.5s, opacity 0.5s, visible 0.5s;
 	cursor: pointer;
 	opacity: 0;
 	visibility: hidden;
@@ -518,19 +518,18 @@ h3 {
 		height: 100%;
 		border: 1px solid #d3eca7;
 		border-radius: 50% 50%;
-		animation: pulse 3s infinite;		
+		animation: pulse 3s infinite;
 	}
 	&:hover {
 		transform: scale(0.9);
 	}
-	
+
 	img {
 		width: 7vh;
 		height: 9vh;
 		background-color: rgba(0, 0, 0, 0);
 	}
 }
-
 
 .active {
 	opacity: 1;
@@ -553,6 +552,16 @@ h3 {
 			left: 47%;
 			bottom: 15%;
 			border-bottom: 1px solid $text2Color;
+		}
+	}
+	&__boxes {
+		display: flex;
+		justify-content: center;
+		margin-top: 0.8em;
+		&-page {
+			font-size: 2.1rem;
+			color: $pure-white;
+			width: 56vh;
 		}
 	}
 	&__box {
@@ -594,9 +603,72 @@ h3 {
 		}
 		&-third {
 			display: flex;
-			justify-content: flex-end;
+			justify-content: space-between;
 			align-items: center;
 			padding: 0 0 3em 0;
+
+			.space {
+				display: flex;
+				font-size: 1.8rem;
+				.wrapperr {
+					.button {
+						display: inline-block;
+						height: 60px;
+						width: 60px;
+						margin: 0 0.7em;
+						overflow: hidden;
+						background: $text2Color;
+						border-radius: 50px;
+						cursor: pointer;
+						box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.02);
+						transition: all 0.3s ease-out;
+						span {
+							font-size: 2rem;
+							font-weight: 500;
+							line-height: 60px;
+							margin-left: 0.5em;
+							transition: all 0.5s ease-out;
+						}
+						&:hover:nth-child(1) {
+							width: 200px;
+						}
+						&:hover:nth-child(2) {
+							width: 310px;
+						}
+						&:hover .icon i {
+							color: #fff;
+						}
+						.icon {
+							display: inline-block;
+							height: 60px;
+							width: 60px;
+							text-align: center;
+							border-radius: 50px;
+							box-sizing: border-box;
+							line-height: 60px;
+							transition: all 0.5s ease-out;
+							color: $lineBorderColor;
+							i {
+								font-size: 2.5rem;
+								line-height: 60px;
+								transition: all 0.5s ease-out;
+							}
+						}
+						&:nth-child(1):hover .icon {
+							background: $lineBorderColor;
+						}
+						&:nth-child(2):hover .icon {
+							background: $lineBorderColor;
+						}
+						&:nth-child(1) span {
+							color: $lineBorderColor;
+						}
+						&:nth-child(2) span {
+							color: $lineBorderColor;
+						}
+					}
+				}
+			}
 
 			button {
 				padding: 1.5em 2em;
