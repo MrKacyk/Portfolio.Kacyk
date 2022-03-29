@@ -35,7 +35,7 @@ const handleScrollBar = () => {
 	const scrollBarWidth = Math.floor((scroll / leftToScroll) * 100)
 	console.log(scrollBarWidth)
 
-	if (scrollBarWidth > 30) {
+	if (scrollBarWidth > 25) {
 		btn.classList.add('active')
 	} else {
 		btn.classList.remove('active')
@@ -51,8 +51,8 @@ const scrollToTop = () => {
 }
 
 const handleNav = () => {
-	if (nav.classList.toggle('shrink', window.scrollY > 200)) {
-		nav.classList.remove('nav', window.scrollY > 200)
+	if (nav.classList.toggle('shrink', window.scrollY > 60)) {
+		nav.classList.remove('nav', window.scrollY > 60)
 	} else {
 		nav.classList.add('nav')
 	}
