@@ -206,6 +206,7 @@
 			padding: 0 2em;
 			&-page{
 				font-size: 1.6rem;
+				width: 560px;
 			}
 		}
 		&__box {
@@ -262,6 +263,11 @@
 			&-first {				
 				&-h3 {
 					font-size: 1.9rem;
+				}
+				&-episode {
+					.card {
+						width: 43.5vh;
+					}
 				}
 			}
 			&-second {

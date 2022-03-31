@@ -186,7 +186,7 @@ h3 {
 	}
 	&__one:hover::before,
 	&__one:hover::after {
-		width: 35%;
+		width: 40%;
 	}
 }
 
@@ -733,7 +733,6 @@ h3 {
 
 .portfolio {
 	@include heroImges('../img/laptop-1920.jpg');
-	height: 100vh;
 	&__box {
 		display: flex;
 		flex-direction: column;
@@ -760,18 +759,48 @@ h3 {
 		align-items: center;
 		&-first {
 			&-h3 {
+				text-align: center;
 				@include portfolioH3;
 				&::before {
 					position: absolute;
 					content: '';
-					width: 30%;
-					left: 33%;
+					width: 15%;
+					left: 40%;
 					bottom: 25%;
 					border-bottom: 1px solid $text2Color;
 				}
 			}
-			&-episode {
-
+			&-episode {			
+				padding: 0 2em 3em 2em;
+				.card {
+					background-color: $pure-white;
+					overflow: hidden;
+					padding: 1.5em 1em;
+					border-radius: 8px;
+					width: 42.5vh;
+					box-shadow: -6px 8px 20px 8px black;
+					img {
+						width: 40vh;
+						height: 22vh;
+					}				
+					&-title {
+						padding: 0.4em 0;
+						font-size: 2.1rem;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+					}
+					&-text {
+						padding-bottom: 1em;
+						font-size: 1.6rem;
+					}
+					&-span {
+						font-weight: bold;
+						padding: 0.5em;
+						border: 1px solid black;
+						color: $text3Color;
+					}
+					
+				}
 			}
 		}
 		&-second {
