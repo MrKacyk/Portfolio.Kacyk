@@ -192,40 +192,40 @@
 	}
 	///////// CONTACT
 	.contact {
-        &__text {
+		&__text {
 			letter-spacing: normal;
-            font-size: 2.7rem;
-            padding: 1.5em 0.8em 0.8em 0.8em;
-            &::before {
-                width: 12%;
-                left: 44%;
-                bottom: 13%;
-            }
-        }
+			font-size: 2.7rem;
+			padding: 1.5em 0.8em 0.8em 0.8em;
+			&::before {
+				width: 12%;
+				left: 44%;
+				bottom: 13%;
+			}
+		}
 		&__boxes {
 			padding: 0 2em;
-			&-page{
+			&-page {
 				font-size: 1.6rem;
 				width: 560px;
 			}
 		}
 		&__box {
 			flex-direction: column;
-            justify-content: center;
-            padding: 1.5em 0.5em;
-            &-first {
-                input {
-                    padding: 1.5em;
-                    width: 45vh;
-                }
-            }
-            &-second {
-                textarea {
-                    width: 45vh;
-                }
-            }
-            &-third {
-				flex-direction: column;	
+			justify-content: center;
+			padding: 1.5em 0.5em;
+			&-first {
+				input {
+					padding: 1.5em;
+					width: 45vh;
+				}
+			}
+			&-second {
+				textarea {
+					width: 45vh;
+				}
+			}
+			&-third {
+				flex-direction: column;
 				padding: 0;
 				margin: 0;
 				.space {
@@ -242,14 +242,26 @@
 				button {
 					margin: 1.7em 0;
 				}
-            }
-		}   
-        
+			}
+		}
 	}
 
-	//////// PORTFOLIO 
+	//////// PORTFOLIO
 
 	.portfolio {
+		.modal {
+			.slider-wrap {
+				display: flex;
+				flex-direction: column;
+				.navigation {
+					padding: 1em;
+				}
+			}
+			.slider-wrap img {
+				width: 50vh;
+				height: 32vh;
+			}
+		}
 		&__box {
 			&-h2 {
 				&::before {
@@ -260,21 +272,6 @@
 		}
 		&__space {
 			flex-direction: column;
-			&-first {				
-				&-h3 {
-					font-size: 1.9rem;
-				}
-				&-episode {
-					.card {
-						width: 43.5vh;
-					}
-				}
-			}
-			&-second {
-				&-h3 {
-					font-size: 1.9rem;
-				}
-			}
 		}
 	}
 }
@@ -360,23 +357,22 @@
 	.contact {
 		&__box {
 			flex-direction: column;
-            padding: 2em 0.5em;
-            &-first {
-                input {
-                    padding: 2em;
-                    width: 45vh;
-                }
-            }
-            &-second {
-                textarea {
-                    width: 45vh;
-                }
-            }
-		}   
-        
+			padding: 2em 0.5em;
+			&-first {
+				input {
+					padding: 2em;
+					width: 45vh;
+				}
+			}
+			&-second {
+				textarea {
+					width: 45vh;
+				}
+			}
+		}
 	}
 
- ///// PORTFOLIO
+	///// PORTFOLIO
 	.portfolio {
 		@include heroImges2('../img/laptop-640.jpg');
 	}

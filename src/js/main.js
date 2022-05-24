@@ -5,6 +5,17 @@ const navMobile = document.querySelector('.nav-mobile')
 const navBtn = document.querySelector('.burger-btn')
 const footerYear = document.querySelector('.footer__year')
 
+
+const zoom_icons = document.querySelectorAll('.zoom-icon')
+const modal_overlay = document.querySelector('.modal-overlay')
+const slider_wrap = document.querySelector('.slider-wrap')
+const container = document.querySelector('.portfolio__box')
+const btnClose = document.querySelector('.btnClose')
+const images = document.querySelectorAll('.images img')
+const prev_btn = document.querySelector('.prev-btn')
+const next_btn = document.querySelector('.next-btn')
+
+
 const handleNavifin = () => {
 	navMobile.classList.toggle('nav-mobile--active')
 	
@@ -70,16 +81,63 @@ function initMap() {
 	})
 }
 
-
-
-
 const handleCurrentYear = () => {
 	const year = new Date().getFullYear()
 	footerYear.innerText = year
 }
+
 
 handleCurrentYear()
 window.addEventListener('scroll', handleScrollBar)
 window.addEventListener('scroll', handleNav)
 btn.addEventListener('click', scrollToTop)
 navBtn.addEventListener('click', handleNavifin)
+
+/* ---------------------- Modal Pop Up Animation -----------------------*/
+
+let curentIndex = 0
+
+zoom_icons.forEach((icn, i) =>
+	icn.addEventListener('click', () => {
+		modal_overlay.classList.add('modal-overlay--open')
+		slider_wrap.classList.add('slider-wrap-open')
+		container.classList.add('portfolio__box-container')
+		document.body.classList.add('stopScrolling')
+		curentIndex = i
+		changeImage(curentIndex)
+	})
+)
+
+
+btnClose.addEventListener('click', () => {
+	modal_overlay.classList.remove('modal-overlay--open')
+	slider_wrap.classList.remove('slider-wrap-open')
+	container.classList.remove('portfolio__box-container')
+	document.body.classList.remove('stopScrolling')
+})
+
+
+prev_btn.addEventListener('click', () => {
+	if (curentIndex === 0) {
+		curentIndex = 2
+	} else {
+		curentIndex--
+	}
+	changeImage(curentIndex)
+})
+
+next_btn.addEventListener('click', () => {
+	if (curentIndex === 2) {
+		curentIndex = 0
+	} else {
+		curentIndex++
+	}
+	changeImage(curentIndex)
+})
+
+const changeImage = index => {
+	images.forEach(img => img.classList.remove('showImage'))
+	images[index].classList.add('showImage')
+}
+
+/* -------------------------------------------------------------- */
