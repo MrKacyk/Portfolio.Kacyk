@@ -93,6 +93,10 @@ window.addEventListener('scroll', handleNav)
 btn.addEventListener('click', scrollToTop)
 navBtn.addEventListener('click', handleNavifin)
 
+/* ---------------------- Mixin Animation -----------------------*/
+
+let mixer = mixitup('.portfolio-gallery');
+
 /* ---------------------- Modal Pop Up Animation -----------------------*/
 
 let curentIndex = 0
